@@ -28,7 +28,7 @@ async function main() {
     const connection = await amqp.connect(CONNECT_CONFIG.host)
     const channel = await connection.createChannel()
 
-    const queue = "teste"
+    const queue = "challenger"
     await channel.consume(queue, (msg) => console.log(msg?.content.toString()))
   } catch (error) {
     throw error

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
+    "start": "ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
     "build": "tsc -b",
     "receive": "ts-node-dev --transpile-only --ignore-watch node_modules src/receive.ts",
     "send": "ts-node-dev --transpile-only --ignore-watch node_modules src/send.ts",
